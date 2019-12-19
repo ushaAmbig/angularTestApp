@@ -25,5 +25,5 @@ var Calculator = module.exports = mongoose.model('calculator', calculatorSchema)
 
 // Create a wrapper for getting all records
 module.exports.get = function (callback, limit) {
-    Calculator.find(callback).limit(limit);
+    Calculator.find(callback).sort([['create_date', -1]]).limit(limit);
 }
