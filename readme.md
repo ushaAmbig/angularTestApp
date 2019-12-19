@@ -5,7 +5,7 @@ App will take two numbers as input and multiply them and store them in Database.
 
 ## Software Used
 
-Below are the software and frameworks we have used for this project
+Below are the software and frameworks used for this project
 
  - NodeJS
  - ExpressJS
@@ -41,7 +41,7 @@ Once you start the application, you will see below message in terminal
   After this, you can open [http://localhost:3000/](http://localhost:3000/) in browser, and start using the application
  
  ## Unit Testing
-We have used mocha and karma for unit testing. 
+mocha and karma are used for unit testing. 
 
 Front-end test cases are under - */public/tests/main.spec.js*
 Back-end test cases are under - */test/api.spec.js*
@@ -57,7 +57,7 @@ Above command should run NodeJS test cases and then AngularJS test cases. To run
     $ npm test-node
     $ npm test-angular
 
-Test result should like this,
+Test result should look like this,
 
     Db connected successfully
     
