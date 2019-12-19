@@ -1,0 +1,18 @@
+<div class="last-results-wrap">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Value 1</th>
+                <th scope="col">Value 2</th>
+                <th scope="col">Result</th>
+            </tr>
+        </thead>
+        <tbody ng-repeat="row in previousResults track by $index">
+            <tr>
+                <td>{{::row.value1}}</td>
+                <td>{{::row.value2}}</td>
+                <td>{{::row.result}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

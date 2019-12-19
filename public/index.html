@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-IN">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Angular Test Application">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#fafafa">
+	<title>Angular application - testApp</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body ng-app="testApp" class="bg-dark">
+	<div ng-controller="mainController" class="container-wrap">
+		<div class="result-wrap text-light">
+			<div ng-show="displayResult" class="result">
+				<div class="display-3">
+					<result-space></result-space>
+				</div>
+			</div>
+		</div>
+		<div class="main-container bg-light">
+			<div ng-include="'partials/form.html'"></div>
+			<div ng-show="previousResults">
+				<p>Previous Results:</p>
+				<div ng-include="'partials/previousResults.html'"></div>
+			</div>
+		</div>
+	</div>
+	<script src="lib/angular.min.js"></script>
+	<script src="mainController.js"></script>
+	<script src="constants.js"></script>
+	<script src="directive.js"></script>
+	<script src="service.js"></script>
+</body>
+
+</html>

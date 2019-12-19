@@ -1,0 +1,17 @@
+<form name="calculateForm" novalidate>
+    <div class="input-group">
+        <input type="text" class="form-control form-control-lg" ng-model="$parent.firstValue" name="value1"
+            ng-pattern="/^[0-9]*$/" ng-class="calculateForm.value1.$error.pattern ? 'err':''"
+            ng-change="$parent.toggleResult()" required />
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="">x</span>
+        </div>
+        <input type="text" class="form-control form-control-lg" ng-model="$parent.secondValue" name="value2"
+            ng-pattern="/^[0-9]*$/" ng-class="calculateForm.value2.$error.pattern ? 'err':''"
+            ng-change="$parent.toggleResult()" required />
+        <div class="input-group-prepend">
+            <input class="btn btn-lg btn-primary" type="submit" value="Calculate" name="result"
+                ng-disabled="calculateForm.$invalid" ng-click="$parent.calculateResult()" />
+        </div>
+    </div>
+</form>

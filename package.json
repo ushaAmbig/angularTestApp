@@ -1,0 +1,29 @@
+{
+	"name": "angulartest",
+	"version": "1.0.0",
+	"description": "This project is created for demo purpose",
+	"main": "index.js",
+	"scripts": {
+		"test": "npm run test-node &&  npm run test-angular",
+		"test-node": "mocha --timeout 10000",
+		"test-angular": "karma start",
+		"start": "node server"
+	},
+	"author": "Usha Ambig",
+	"license": "ISC",
+	"devDependencies": {
+		"chai": "^4.2.0",
+		"request": "^2.88.0",
+		"mocha": "^6.2.2",
+		"karma": "^4.4.1",
+		"karma-chrome-launcher": "^3.1.0",
+		"karma-cli": "^2.0.0",
+		"karma-jasmine": "^2.0.1"
+	},
+	"dependencies": {
+		"mongodb": "^3.4.0",
+		"mongoose": "^5.8.1",
+		"express": "^4.17.1",
+		"cors": "^2.8.5"
+	}
+}

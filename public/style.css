@@ -1,0 +1,26 @@
+/*-- basic styling and overrides --*/
+
+.err,.err:focus {
+    font-weight: bold;
+    color: red;
+}
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+.container-wrap {
+    padding: 20px;
+    margin: auto;
+    max-width: 1024px;
+}
+.main-container {
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.result-wrap {
+    min-height: 120px;
+}
+.result {
+    border-bottom: 1px solid #aaa;
+}
