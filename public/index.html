@@ -22,7 +22,7 @@
 		</div>
 		<div class="main-container bg-light">
 			<div ng-include="'partials/form.html'"></div>
-			<div ng-show="previousResults">
+			<div class="prev-result-wrap mt-3" ng-show="previousResults && previousResults.length >0">
 				<p>Previous Results:</p>
 				<div ng-include="'partials/previousResults.html'"></div>
 			</div>

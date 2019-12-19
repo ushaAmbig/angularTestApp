@@ -50,6 +50,7 @@ to run the unit tests, run below command
 
     $ npm test
 
+***Note*: Before start the test, make sure application is running in port 3000**
 
 Above command should run NodeJS test cases and then AngularJS test cases. To run individual test cases use below commands
 
